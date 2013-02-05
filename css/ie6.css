@@ -1,0 +1,124 @@
+
+a.mzc_aSideBar {
+	position: absolute;
+}
+.mzc_goTop {
+	display: none !important;
+}
+
+#modalContainer {
+	position: absolute;
+}
+.mzc_mainBox .mzc_detailsView .mzc_productWrapper span {
+	line-height: 15px;
+}
+.mzc_mainBox .mzc_boxContent .mzc_inner .mzc_inner {
+	height: 475px;
+}
+.mzc_mainBox .mzc_stepTable .mzc_product .mzc_discount {
+	width: 330px;
+}
+.mzc_mainBox .mzc_stepTable .mzc_product .mzc_buttons {
+	padding-left: 45px;
+}
+	.mzc_mainBox .mzc_formLine .mzc_codLabel a,
+	.mzc_mainBox .mzc_formLine .mzc_codLabel a {
+		width: 120px;
+	}
+	.mzc_mainBox .mzc_formLine .mzc_youfeiLabel a {
+		width: 110px;
+	}
+	.mzc_mainBox .mzc_formLine .mzc_molingLabel a {
+		width: 60px;
+	}
+	.mzc_mainBox .mzc_formLine .mzc_deaLabel a {
+		width: 15px;
+	}
+	.mzc_mainBox .mzc_formLine .mzc_tickLabel i {
+		bottom: -8px;
+	}
+	
+		.mzc_mainBox .mzc_stepForm .mzc_formLine .mzc_tickLabel a {
+			height; 19px;
+			width: 35px;
+		}
+		.mzc_mainBox .mzc_stepForm .mzc_formLine .mzc_tickLabel i {
+			bottom: -8px;
+		}
+	
+	.mzc_mainBox .mzc_product .mzc_baoyouLabel {
+		width: 166px;
+	}
+		.mzc_mainBox .mzc_product .mzc_tickLabel i {
+			bottom: -7px;
+		}
+.mzc_mainBox .mzc_stepTable .mzc_product .mzc_block1 {
+	left: 125px;
+}
+.mzc_mainBox .mzc_stepTable .mzc_product .mzc_block2 {
+	width: auto;
+}
+	.mzc_mainBox .mzc_stepTable .mzc_product .mzc_block2 .mzc_postageLabel {
+		width: 45px;
+	}
+	.mzc_mainBox .mzc_stepTable .mzc_product .mzc_block2 .mzc_postageLabel i {
+		bottom: -6px;
+		right: 1px;
+	}
+.mzc_mainBox .mzc_stepTable .mzc_product .mzc_block3 {
+	margin-right: 6px;
+}
+
+.mzc_mainBox .mzc_productGridView .mzc_filter .mzc_floatRight {
+	margin-top: -29px;
+}
+.mzc_mainBox .mzc_productGridView .mzc_selection .mzc_floatRight {
+	margin-top: -25px;
+}
+.mzc_mainBox .mzc_productCarousel .mzc_filter .mzc_floatRight {
+	margin-top: -23px;
+	margin-right: 5px;
+	position: relative;
+}
+#shuiyinListPage .mzc_mainBox .mzc_productCarousel .mzc_filter .mzc_floatRight {
+	margin-top: -20px;
+}
+
+#invitePage .mzc_content textarea {
+	height: 46px;
+}
+
+.mzc_mainBox .mzc_stepTable .mzc_product .mzc_block3 .mzc_yesBtn {
+	right: 4px;
+	bottom: -22px;
+}
+#loginPage .mzc_proArea {
+	margin-left: 7px;
+}
+
+.mzc_mainBox .mzc_stepTable .mzc_tableHeader .mzc_addProduct {
+	width: 66px;
+	float: left;
+	display: inline;
+}
+
+.mzc_productWaterView .mzc_carouselWrapper li {
+	display: inline;
+}
+	.mzc_productWaterView .mzc_carouselWrapper li.mzc_imgOnly {
+		display: block;
+	}
+	
+.mzc_productWaterView .mzc_carouselWrapper li .mzc_image {
+		display: block;
+		font-size: 100px
+}
+.mzc_mainBox .mzc_productWaterView .mzc_type_0 .mzc_shuiyin span {
+	padding-top: 50px;
+	display: block;
+}
+.mzc_mainBox .mzc_productWaterView .type_4 .mzc_shuiyin span {
+	top: -3px\9;
+	right: -5px\9;
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476);
+}

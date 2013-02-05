@@ -1,0 +1,460 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> 美印 - 创建新水印 </title>
+	<link REL="SHORTCUT ICON" HREF="http://127.0.0.1/workspace/super_tag/i/favicon.ico"/>
+	<!-- Meta Tags -->
+	<meta name="keywords" content="美印,水印,淘宝卖家,营销工具,商品主图,批量设置"/>
+	<meta name="description" content=""/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- External CSS -->
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/screen.css?timestamp=1359515420" media="all" />
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/jPicker-1.1.6.css" media="all" />
+	<!--[if IE 6]>
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/ie6.css" media="all" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/ie7.css" media="all" />
+	<![endif]-->
+	<!--[if IE 8]>
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<![endif]-->
+	<link type="text/css" href="http://127.0.0.1/workspace/super_tag/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+	<!--[if IE 6]>
+		<script type="text/javascript" src="http://127.0.0.1/workspace/super_tag/js/DD_belatedPNG_0.0.8a.js"></script>
+	<![endif]-->
+	
+    <script type="text/javascript" src="http://127.0.0.1/workspace/super_tag/js/head.load.min.js"></script>
+    <script type="text/javascript">
+
+	    head.js({jquery: "http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-1.6.4.min.js"},
+	    		"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.jclass.js",
+	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.tmpl.min.js",
+	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/knockout-1.2.1.js",
+	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-textfill-0.1.js?timestamp=1359515420",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.rotate-0.1.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.mousewheel.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jpicker-1.1.6.js",
+	        	{cookie: "http://127.0.0.1/workspace/super_tag/js/jquery.cookie.js"},
+	        	"http://127.0.0.1/workspace/super_tag/js/json.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/jquery.zclip.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/jquery.jqtransform.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/jquery.zclip.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/ajaxfileupload.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-ui-1.8.16.custom.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/step3.js");
+
+    </script>
+</head>
+
+<body id="newActivityPage">
+<div class="mzc_pageWrapper">
+    
+<!-- 到期提示 -->
+<div id="deadlineMask">
+    <div class="msgWrapper">
+        <img src="http://127.0.0.1/workspace/super_tag/i/meiyin.png" class="logo"/>
+        <p>
+            尊敬的用户您好：
+            <br/>
+            您的美印将在<span class="toDay"></span>到期，为了保证您商品图片正常显示，我们会在您订购期的最后一天(<span class="endDate">03月03日</span>)<em>删除您的所有水印</em>。
+            <br/>
+            如您需要继续保留水印，请现在<a href="/user/version" class="mzc_blue">点击这里</a>续订美印。
+            <br/>
+            <em>小提示</em>:您可以<a href="/user/version" class="mzc_blue">订购1年的免费版</a>，就不用担心忘记续订了。
+        </p>
+        <p style="text-align:right;">
+            <a href="javascript:;" class="mzc_blue close">我知道了</a>
+        </p>
+    </div>
+</div>
+<!-- end of 到期提示 -->
+
+<div class="mzc_header">
+    <a href="/promotion/list" class="mzc_logo" name="logo"><h1 class="mzc_hide">美印 - 做快乐精明淘掌柜</h1></a>
+    <input type='hidden' value='10' id='free_per_promo'>
+    <input type='hidden' value='2013/03/03' id='dinggou_deadline'>
+    
+    <div class="topNav">
+        
+        <span class="item">leibei1128</span>
+        
+        
+    	<div class="item">
+    		<a href="javascript:;" class="itemTitle">联系我们</a>
+    		<div class="subNav" style="display:none;">
+	    		<dl class="line">
+	    			<dt>客服旺旺</dt>
+	    			<dd>
+	    				<a target="_blank" href="http://www.taobao.com/webww/?ver=1&touid=cntaobaotaovip:美莹莹&siteid=cntaobao&status=2&portalId=&gid=&itemsId=" class="mzc_kefuLink" name="kefu1"><img src="http://img02.taobaocdn.com/tps/i2/T1.4FJXdxIXXXXXXXX-68-21.gif"/></a>
+	            	</dd>
+	            </dl>
+	       		<dl class="line">
+	       			<dt>旺旺群</dt>
+	    			<dd>
+	       				<a href="http://www.taobao.com/go/act/other/wwgroup.php?uid=&tribeid=489044844" target="_blank"class="mzc_kefuLink"><img src="http://img04.taobaocdn.com/tps/i4/T1fdykXgtiXXXXXXXX-63-20.gif" style="height:20px;vertical-align:-6px;"></a>
+	       			</dd>
+	       		</dl>
+	       		<div class="line lastLine" style="width:160px;">
+	       			<a href="javascript:;" id="feedbackLink" class="uniLink">给我们留言</a>
+	            </div>
+	    	</div>
+    	</div>
+    	<div class="item">
+    		<a href="javascript:;" class="itemTitle">账号管理</a>
+    		<div class="subNav" style="display:none;">
+	            <div class="line">
+		            
+	            	<a href="/user/version" class="mzc_tooltip uniLink" title="初级版 2013年03月03日 到期">初级版用户</a>
+	            	
+	            </div>
+	            <div class="line lastLine">
+	         		<a class="mzc_logout logout uniLink mzc_tooltip" rel="/user/logout/a" name="logout" title="退出美印">退出</a>
+	         	</div>
+	    	</div>
+    	</div>
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+
+	head.ready("jquery", function() {
+		
+		// about header
+		$(".mzc_header .topNav div.item").hover(
+			function() {
+				var item = $(this);
+				item.addClass("item-hover");
+				$(".subNav", item).show();
+			},
+			function() {
+				var item = $(this);
+				item.removeClass("item-hover");
+				$(".subNav", item).hide();
+			}
+		);
+		
+		head.ready("cookie", function() {
+		    var dgdl = $("#dinggou_deadline").val();
+		    dgdl = Date.parse(dgdl);
+		    var now = new Date();
+		    var diff = dgdl - 1360105201417;
+		    if(diff < 1000*60*60*24*7) {
+		        $("#deadlineMask .toDay").text( '' + Math.floor(diff/(1000*60*60*24)) + '天后'  );
+		        $("#deadline-reminder").html("<strong>您订购的美印即将到期，为保证您的正常使用，请<a href='/user/version'>点击这里续订</a></strong>");
+		        if(diff < 1000*60*60*24*1) {
+		            $("#deadlineMask .toDay").text( '今天' );
+		            $("#deadlineMask .close").remove();
+		        }
+		        if($("#versionPage").length < 1 && $("#welcomePage").length < 1 && $("#loginPage").length < 1 && $("#browserPage").length < 1 && $("#invitePage").length < 1 && $.cookie('deadlineMaskTime') !== 'yes') {
+		            $("#deadlineMask").show();
+		            $("#deadlineMask .close").click(function() {
+		                $("#deadlineMask").hide();
+		                $.cookie('deadlineMaskTime', 'yes', { path: '/', expires: 1 }); // 一天过期
+		            });
+		        }
+		    }
+		});
+	});
+</script>
+
+
+    
+
+<input type="hidden" id='change_act_id' value="">
+
+<div class="mzc_content">
+    <div class="mzc_mainBox">
+        <div class="mzc_boxTop">
+            <div class="mzc_inner">
+                <div class="mzc_inner">
+
+                    <ul class="mzc_nav">
+                        <li class="mzc_first"><a href="/" name="homepage"><span><span>首页</span></span></a></li>
+                        <li><a href="/promotion/step1" class="mzc_active" name="newPromotion"><span><span>创建新水印</span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mzc_boxContent">
+            <div class="mzc_inner">
+                <div class="mzc_inner">
+                    <!-- box content -->
+
+                    <div class="mzc_stepBar">
+                        <ul>
+                            <li class="mzc_passed"><span>设置水印信息</span></li>
+                            <li class="mzc_complete"><span>选择商品</span></li>
+                            <li class="mzc_active"><span>设置商品水印</span></li>
+                            <li class="mzc_last"><span>完成</span></li>
+                        </ul>
+
+                        <!-- corner -->
+                        <div class="mzc_barLeft"></div>
+                        <div class="mzc_barRight"></div>
+                    </div>
+                    <!-- step content -->
+
+
+                    <div class="mzc_stepTable">
+						<h2><span class="mzc_idx">3</span>设置商品水印</h2>
+
+                        <div class="inline-hint-box">
+	                        <strong>水印操作：</strong><br/>
+	                        <strong class="mzc_blue">位置:</strong>按住鼠标拖动&nbsp;&nbsp;&nbsp;<strong class="mzc_blue">缩放:</strong>拖动水印右下角&nbsp;&nbsp;&nbsp;<strong class="mzc_blue">旋转<a href="http://bangpai.taobao.com/group/thread/14629359-275104757.htm" target="_blank" class="mzc_gold">(帮助)</a>:</strong>拖动水印右上角&nbsp;&nbsp;&nbsp;<strong class="mzc_blue">透明度:</strong>滚动鼠标滚轮&nbsp;&nbsp;&nbsp;<strong class="mzc_blue">删除:</strong>拖动到图片外
+	                        
+                        	<br/><strong>淘宝新规定:</strong><br/>水印质量将影响搜索排序，我们鼓励大家使用由美印提供清晰好看的水印，同时不要遮挡原图主要部分哦。&nbsp;&nbsp;&nbsp;<a href="http://bangpai.taobao.com/group/thread/400769-270922611.htm?mai_info_source=widget&mai_info_id=2543" target="_blank" class="mzc_blue">查看详情</a>
+                        </div>
+                        
+
+						<div class="mzc_filigrane">
+                            <div class="previewArea">
+                                <div class="mzc_preview">
+                                    <input type="hidden" id="previewpid"/>
+                                    <span class="imagewrapper">
+                                        <img id="previewimg" src="http://127.0.0.1/workspace/super_tag/i/loadingPage3.gif"  />
+                                    </span>
+                                </div>
+                                <div class="previewButtons">
+                                    <a href="javascript:;" class="mzc_button6 cancel"><span><span>清除本图水印</span></span></a>
+                                    <a href="javascript:;" class="mzc_button6_green applyToAll"><span><span>应用到下列商品</span></span></a>
+                                </div>
+                            </div>
+
+                            <div class="wmShelf">
+                                <div class="tabs">
+                                    <a href="javascript:;" rel="#wmstab^#wmtype_1" class="tab active">水印</a>
+                                    <a href="javascript:;" rel="#texttab" class="tab">文字</a>
+                                    <a href="javascript:;" rel="#wmstab^#wmtype_0" class="tab">上传</a>
+                                </div>
+                                <div class="tabContent">
+                                    <div id="wmstab" class="tabContentDiv">
+                                        <ul>
+                                            <li class="wmtype special"><a href="javascript:;" rel="#wmtype_0">上传</a></li>
+                                            <li class="wmtype"><a href="javascript:;" rel="#wmtype_1">推荐</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_100">热销</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_102">打折</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_105">促销</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_103">包邮</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_101">新品</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_104">正品</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_106">底图</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_107">字符</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_108">边框</a></li>
+                                            
+                                                <li class="wmtype"><a href="javascript:;" rel="#wmtype_200">其他</a></li>
+                                            
+                                        </ul>
+                                        <div class="wmList">
+                                            <div class="pagination">
+                                                <a href="javascript:;" class="prevPage">上一页</a>
+                                                <a href="javascript:;" class="nextPage">下一页</a>
+                                            </div>
+                                        </div>
+                                        <div class="wmSpecialList" id="wmtype_0">
+                                            <div class="upload">
+                                                <label>上传水印图片：</label>
+                                                <input type="file" id="uploadWMInput" name="file" size="10"/>
+                                                <a href="javascript:;" class="mzc_button11_large" id="uploadWMBtn">确认上传</a>
+                                            </div>
+                                            <div class="pagination">
+                                                <a target="_blank" href="manage_image" class="mzc_button11_large">管理上传</a>
+                                                <a href="javascript:;" class="prevPage">上一页</a>
+                                                <a href="javascript:;" class="nextPage">下一页</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="texttab" class="tabContentDiv" style="display:none;">
+                                        <div class="formline">
+                                            <label>文字内容:</label>
+                                            <input type="text" value="" id="textcontent"/>
+                                            <div class="mzc_clear"></div>
+                                        </div>
+                                        <div class="formline">
+                                            <label>颜色:</label>
+                                            <span id="colorPicker"></span>
+                                            <div class="mzc_clear"></div>
+                                        </div>
+                                        <div class="formline">
+                                            <span class="mzc_blue">添加文字后，在左侧窗口拖动文字边框可以改变文字大小</span><br/>
+                                            <span class="mzc_blue" id="editText">您正在修改文字，点击左侧预览区域的空白部分可添加新文字</span>
+                                        </div>
+                                        <div class="formline">
+                                            <div class="mzc_clear"></div>
+                                        </div>
+                                        <a href="javascript:;" id="confirmText" class="mzc_button11_large">添加文字</a>
+                                    </div>
+                                </div>
+                            </div>
+
+							<div class="productShelf">
+                                <a href="javascript:;" class="mzc_toleft"></a>
+                                <a href="javascript:;" class="mzc_toright"></a>
+							</div>
+						</div>
+
+					</div>
+
+					<p>&nbsp;</p>
+					<p class="mzc_errorMsg" style="width:705px;margin:0 auto;"></p>
+
+					<div class="mzc_buttonLine">
+						<a href="/promotion/step2" class="mzc_link" name="prevStep3" id="prevStepBtn">返回上一步</a>
+						<a href="javascript:;" class="mzc_button" id="startPromotionBtn" name="nextStep3"><span><span>同步已设置的水印</span></span></a>
+					</div>
+
+
+                    <!-- end of box content -->
+                </div>
+            </div>
+        </div>
+        <div class="mzc_boxBottom">
+            <div class="mzc_inner">
+                <div class="mzc_inner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mzc_goTop">
+	<a href="javascript:;"></a>
+</div>
+<div class="mzc_goBottom">
+	<a href="javascript:;"></a>
+</div>
+
+
+
+    <center>
+<span class=mzc_gray>© Copyright GoodTP.com 2011. All rights reserved. <a href='http://www.miibeian.gov.cn/' target=_blank class=mzc_gray>京ICP备11048253号</a></span>
+<!-- <a href="http://trust.360.cn/search.php" target="_blank" title="360可信网站"><img src="http://trust.360.cn/img.php?sn=9133&id=5" border="0" /></a>  -->
+</center>
+
+
+    <!---->
+</div>
+<input type="hidden" id='user_level' value="6" />
+<script>
+	
+	var globalUserTaobaoGroupName = '';
+	var globalUserTaobaoNextGroupName = '';
+	
+</script>
+<!-- the modals -->
+<div id="modalBackground"></div>
+<div id="modalContainer">
+	
+
+	<!-- custom alert modal -->
+	<div class="mzc_modal" id="alertModal">
+		<div class="mzc_modalContent">
+			<div class="mzc_topBox">
+				提示
+			</div>
+			<div class="mzc_middleBox">
+				<div class="mzc_message">
+
+				</div>
+				<div class="mzc_buttonLine">
+					<a href="javascript:;" class="mzc_button mzc_closeModal" name="cancelInModal"><span><span>我知道了</span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of custom alert modal -->
+	<!-- gold function alert modal -->
+	<div class="mzc_modal" id="goldFunctionAlertModal">
+		<div class="mzc_modalContent">
+			<div class="mzc_topBox">
+				提示
+			</div>
+			<div class="mzc_middleBox">
+				<div class="mzc_message">
+					这是<span class="mzc_gold">皇冠版</span>用户专属功能<br/>
+					<a href="/user/invite" class="mzc_blue" target="_blank" name="inviteInModal">点此邀请其他用户可获赠皇冠版</a>
+				</div>
+				<div class="mzc_buttonLine">
+					<a href="javascript:;" class="mzc_button mzc_closeModal" name="cancelInModal"><span><span>我知道了</span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of gold function alert modal -->
+	<!-- feedback modal -->
+	    <div id="feedbackModal" class="mzc_modal">
+	        <div class="mzc_modalContent">
+
+	            <div class="mzc_topBox">
+	               	 欢迎提出您对美印的建议
+	            </div>
+
+	            <div class="mzc_middleBox">
+	                <div class="mzc_form">
+	                    <div class="mzc_formLine">
+	                        <label>您的联系方式</label>
+	                        <input name="fcontact" id="fcontact" type="text" class="mzc_text"/>
+	                        <div class="mzc_clear">&nbsp;</div>
+	                    </div>
+	                    <div class="mzc_formLine">
+	                        <label>您的建议</label>
+	                        <textarea name="fadvice" id="fadvice"></textarea>
+	                        <div class="mzc_clear">&nbsp;</div>
+	                    </div>
+	                    <div class="mzc_buttonLine">
+	                        <a href="javascript:;" class="mzc_link mzc_closeModal" name="feedbackCancel">取消</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	                        <a href="javascript:;" class="mzc_button submit" name="feedbackSubmit"><span><span>提交</span></span></a>
+	                    </div>
+	                </div>
+	                <div class="mzc_message">
+	                   	 您的建议已经成功提交，感谢您对美印的支持。
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- end of feedback modal -->
+	
+
+</div>
+
+<a href="/user/invite" id="inviteLink" target="_blank" name="inviteLink" style="display:none;"><span><span><span>免费提升水印商品上限</span></span></span></a>
+
+<a href="http://bangpai.taobao.com/group/thread/14629359-267635731.htm" title="开店技巧" target="_blank" id="helpLink" style="display:none;"><span><span><span>开店技巧</span></span></span></a>
+<!-- <a href="javascript:;" title="提建议" id="feedbackLink" style="display:none;"><span><span><span>提建议</span></span></span></a>-->
+
+<script type="text/javascript">
+	head.ready("jquery", function() {
+		if($.browser.msie && $.browser.version == 6) {
+			DD_belatedPNG.fix("a#inviteLink span span span, a#helpLink span span span, a#feedbackLink span span span");
+		}
+	});
+</script>
+
+
+
+    <script type="text/javascript">
+		head.ready("jquery", function() {
+			if($.browser.msie && $.browser.version == 6) {
+				DD_belatedPNG.fix(".mzc_goTop a");
+				DD_belatedPNG.fix(".mzc_goBottom a");
+			}
+		});
+	</script>
+
+    
+
+    <!--<script type="text/javascript" src=" http://toptrace.taobao.com/assets/getAppKey.js" topappkey="12367182"></script>-->
+    </body>
+</html>
+

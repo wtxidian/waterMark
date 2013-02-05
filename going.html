@@ -1,0 +1,476 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title> 美印 - 水印列表 </title>
+	<link REL="SHORTCUT ICON" HREF="http://127.0.0.1/workspace/super_tag/i/favicon.ico"/>
+	<!-- Meta Tags -->
+	<meta name="keywords" content="美印,水印,淘宝卖家,营销工具,商品主图,批量设置"/>
+	<meta name="description" content=""/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- External CSS -->
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/screen.css?timestamp=1359515420" media="all" />
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/jPicker-1.1.6.css" media="all" />
+	<!--[if IE 6]>
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/ie6.css" media="all" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/ie7.css" media="all" />
+	<![endif]-->
+	<!--[if IE 8]>
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<![endif]-->
+	<link type="text/css" href="http://127.0.0.1/workspace/super_tag/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+	<!--[if IE 6]>
+		<script type="text/javascript" src="http://127.0.0.1/workspace/super_tag/js/DD_belatedPNG_0.0.8a.js"></script>
+	<![endif]-->
+	
+    <script type="text/javascript" src="http://127.0.0.1/workspace/super_tag/js/head.load.min.js"></script>
+    <script type="text/javascript">
+
+	    head.js({jquery: "http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-1.6.4.min.js"},
+	    		"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.jclass.js",
+	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.tmpl.min.js",
+	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/knockout-1.2.1.js",
+	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-textfill-0.1.js?timestamp=1359515420",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.rotate-0.1.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.mousewheel.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jpicker-1.1.6.js",
+	        	{cookie: "http://127.0.0.1/workspace/super_tag/js/jquery.cookie.js"},
+	        	"http://127.0.0.1/workspace/super_tag/js/json.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/jquery.zclip.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/jquery.jqtransform.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/jquery.zclip.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/ajaxfileupload.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-ui-1.8.16.custom.min.js",
+	        	"http://127.0.0.1/workspace/super_tag/js/script.js?timestamp=1359515420");
+
+    </script>
+</head>
+
+<body id="activityHomePage">
+<div class="mzc_pageWrapper">
+    
+<!-- 到期提示 -->
+<div id="deadlineMask">
+    <div class="msgWrapper">
+        <img src="http://127.0.0.1/workspace/super_tag/i/meiyin.png" class="logo"/>
+        <p>
+            尊敬的用户您好：
+            <br/>
+            您的美印将在<span class="toDay"></span>到期，为了保证您商品图片正常显示，我们会在您订购期的最后一天(<span class="endDate">03月03日</span>)<em>删除您的所有水印</em>。
+            <br/>
+            如您需要继续保留水印，请现在<a href="/user/version" class="mzc_blue">点击这里</a>续订美印。
+            <br/>
+            <em>小提示</em>:您可以<a href="/user/version" class="mzc_blue">订购1年的免费版</a>，就不用担心忘记续订了。
+        </p>
+        <p style="text-align:right;">
+            <a href="javascript:;" class="mzc_blue close">我知道了</a>
+        </p>
+    </div>
+</div>
+<!-- end of 到期提示 -->
+
+<div class="mzc_header">
+    <a href="/promotion/list" class="mzc_logo" name="logo"><h1 class="mzc_hide">美印 - 做快乐精明淘掌柜</h1></a>
+    <input type='hidden' value='10' id='free_per_promo'>
+    <input type='hidden' value='2013/03/03' id='dinggou_deadline'>
+    
+    <div class="topNav">
+        
+        <span class="item">leibei1128</span>
+        
+        
+    	<div class="item">
+    		<a href="javascript:;" class="itemTitle">联系我们</a>
+    		<div class="subNav" style="display:none;">
+	    		<dl class="line">
+	    			<dt>客服旺旺</dt>
+	    			<dd>
+	    				<a target="_blank" href="http://www.taobao.com/webww/?ver=1&touid=cntaobaotaovip:美莹莹&siteid=cntaobao&status=2&portalId=&gid=&itemsId=" class="mzc_kefuLink" name="kefu1"><img src="http://img02.taobaocdn.com/tps/i2/T1.4FJXdxIXXXXXXXX-68-21.gif"/></a>
+	            	</dd>
+	            </dl>
+	       		<dl class="line">
+	       			<dt>旺旺群</dt>
+	    			<dd>
+	       				<a href="http://www.taobao.com/go/act/other/wwgroup.php?uid=&tribeid=489044844" target="_blank"class="mzc_kefuLink"><img src="http://img04.taobaocdn.com/tps/i4/T1fdykXgtiXXXXXXXX-63-20.gif" style="height:20px;vertical-align:-6px;"></a>
+	       			</dd>
+	       		</dl>
+	       		<div class="line lastLine" style="width:160px;">
+	       			<a href="javascript:;" id="feedbackLink" class="uniLink">给我们留言</a>
+	            </div>
+	    	</div>
+    	</div>
+    	<div class="item">
+    		<a href="javascript:;" class="itemTitle">账号管理</a>
+    		<div class="subNav" style="display:none;">
+	            <div class="line">
+		            
+	            	<a href="/user/version" class="mzc_tooltip uniLink" title="初级版 2013年03月03日 到期">初级版用户</a>
+	            	
+	            </div>
+	            <div class="line lastLine">
+	         		<a class="mzc_logout logout uniLink mzc_tooltip" rel="/user/logout/a" name="logout" title="退出美印">退出</a>
+	         	</div>
+	    	</div>
+    	</div>
+    </div>
+    
+</div>
+
+<script type="text/javascript">
+
+	head.ready("jquery", function() {
+		
+		// about header
+		$(".mzc_header .topNav div.item").hover(
+			function() {
+				var item = $(this);
+				item.addClass("item-hover");
+				$(".subNav", item).show();
+			},
+			function() {
+				var item = $(this);
+				item.removeClass("item-hover");
+				$(".subNav", item).hide();
+			}
+		);
+		
+		head.ready("cookie", function() {
+		    var dgdl = $("#dinggou_deadline").val();
+		    dgdl = Date.parse(dgdl);
+		    var now = new Date();
+		    var diff = dgdl - 1359905402317;
+		    if(diff < 1000*60*60*24*7) {
+		        $("#deadlineMask .toDay").text( '' + Math.floor(diff/(1000*60*60*24)) + '天后'  );
+		        $("#deadline-reminder").html("<strong>您订购的美印即将到期，为保证您的正常使用，请<a href='/user/version'>点击这里续订</a></strong>");
+		        if(diff < 1000*60*60*24*1) {
+		            $("#deadlineMask .toDay").text( '今天' );
+		            $("#deadlineMask .close").remove();
+		        }
+		        if($("#versionPage").length < 1 && $("#welcomePage").length < 1 && $("#loginPage").length < 1 && $("#browserPage").length < 1 && $("#invitePage").length < 1 && $.cookie('deadlineMaskTime') !== 'yes') {
+		            $("#deadlineMask").show();
+		            $("#deadlineMask .close").click(function() {
+		                $("#deadlineMask").hide();
+		                $.cookie('deadlineMaskTime', 'yes', { path: '/', expires: 1 }); // 一天过期
+		            });
+		        }
+		    }
+		});
+	});
+</script>
+
+
+    
+	<div class="mzc_content">
+
+		<div class="mzc_messageBox">
+			<input type="hidden" id="level0" value="mzc_level0"/>
+			<input type="hidden" id="level1" value="mzc_level1"/>
+			<input type="hidden" id="level2" value="mzc_level2"/>
+		</div>
+
+		<input type="hidden" id="listStatus" value="0"/>
+
+		<div class="mzc_mainBox">
+			<div class="mzc_boxTop"><div class="mzc_inner"><div class="mzc_inner">
+
+				<ul class="mzc_nav">
+					<li class="mzc_first"><a href="/promotion/list/0" class="mzc_active" name="homepage"><span><span>首页</span></span></a></li>
+					<li><a href="/promotion/step1" name="newPromotion"><span><span>创建新水印</span></span></a></li>
+				</ul>
+
+			</div></div></div>
+
+
+			<div class="mzc_boxContent">
+				<div class="mzc_inner"><div class="mzc_inner">
+					<!-- box content -->
+
+					<div class="mzc_bigTableFilter">
+						
+						
+						<a href="/promotion/list/2" class="mzc_green" name="processingPromotions"><span><span>进行中</span></span></a>
+						
+						
+						
+						<a href="/promotion/list/3" class="mzc_gray" name="endedPromotions"><span><span>已结束</span></span></a>
+						
+                        <a href="/promotion/detail/0" class="" name="endedPromotions"><span><span>我的全部水印商品</span></span></a>
+                        
+    				</div>
+
+					
+					<table class="mzc_bigTable">
+						<colgroup>
+							<col width="10%"/>
+							<col width="25%"/>
+							<col width="30%"/>
+							<col width="30%"/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th>水印名称</th>
+								<th>创建时间</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+        					
+							<tr id="128200">
+								
+                                    
+                                    
+									
+									
+									<td class="mzc_green mzc_center mzc_status">进行中</td>
+			                    	
+									
+                                    
+									<td class="mzc_center">
+										<a class="mzc_blue mzc_promotionName" href="/promotion/detail/128200" name="promotionName">2月3日23点18分水印</a>
+										
+										<input type="hidden" class="short_title" value=""/>
+										<input type="hidden" class="long_title" value=""/>
+									</td>
+									<td class="mzc_center"><i class="mzc_startTime">2013-02-03 23:27</i>
+                                    </td>
+									<td class="mzc_center mzc_buttons">
+										
+                                            
+                                                <a href="javascript:;" class="mzc_addBtn mzc_button4" name="addPrduct"><span><span>增加商品</span></span></a>
+                                                <!--<a href="/promotion/edit/128200" class="mzc_editBtn mzc_button4" name="editPrduct"><span><span>修改水印</span></span></a>-->
+                                                <a href="javascript:;" class="mzc_finishBtn mzc_button4 mzc_redBtn" name="stopPromotion"><span><span>删除水印</span></span></a>
+                                            
+	    								
+                                        
+                                        
+									</td>
+								</tr>
+								
+        					
+        					
+        					<tr>
+        						<td colspan="4" class="mzc_center mzc_btnLine">
+        							<a href="javascript:;" class="mzc_showFinishedBtn mzc_blue" name="showFinishedBtn">显示更多水印组</a>
+        						</td>
+        					</tr>
+        					
+						</tbody>
+					</table>
+					
+
+					
+						<p class="mzc_message">建议反馈旺旺群：489044844</p>
+					
+					<!-- end of box content -->
+				</div></div>
+			</div>
+
+			<div class="mzc_boxBottom"><div class="mzc_inner"><div class="mzc_inner"></div></div></div>
+
+
+		</div>
+
+	</div>
+
+    <!--
+    <div id="mzif-container" style="margin: -20px auto 0 auto; width:790px; height:98px; overflow:hidden;">
+	    <iframe scrolling="no" src="/f/show?id=4&theme=1&count=6" width="790" height="98" frameborder="0" allowTransparency="true">
+	    </iframe>
+    </div>
+    -->
+<div class="mzc_goTop">
+	<a href="javascript:;"></a>
+</div>
+
+
+    <center>
+<span class=mzc_gray>© Copyright GoodTP.com 2011. All rights reserved. <a href='http://www.miibeian.gov.cn/' target=_blank class=mzc_gray>京ICP备11048253号</a></span>
+<!-- <a href="http://trust.360.cn/search.php" target="_blank" title="360可信网站"><img src="http://trust.360.cn/img.php?sn=9133&id=5" border="0" /></a>  -->
+</center>
+
+
+    <!---->
+</div>
+<input type="hidden" id='user_level' value="6" />
+<script>
+	
+	var globalUserTaobaoGroupName = '';
+	var globalUserTaobaoNextGroupName = '';
+	
+</script>
+<!-- the modals -->
+<div id="modalBackground"></div>
+<div id="modalContainer">
+	
+	
+
+	<!-- custom alert modal -->
+	<div class="mzc_modal" id="alertModal">
+		<div class="mzc_modalContent">
+			<div class="mzc_topBox">
+				提示
+			</div>
+			<div class="mzc_middleBox">
+				<div class="mzc_message">
+
+				</div>
+				<div class="mzc_buttonLine">
+					<a href="javascript:;" class="mzc_button mzc_closeModal" name="cancelInModal"><span><span>我知道了</span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of custom alert modal -->
+	<!-- gold function alert modal -->
+	<div class="mzc_modal" id="goldFunctionAlertModal">
+		<div class="mzc_modalContent">
+			<div class="mzc_topBox">
+				提示
+			</div>
+			<div class="mzc_middleBox">
+				<div class="mzc_message">
+					这是<span class="mzc_gold">皇冠版</span>用户专属功能<br/>
+					<a href="/user/invite" class="mzc_blue" target="_blank" name="inviteInModal">点此邀请其他用户可获赠皇冠版</a>
+				</div>
+				<div class="mzc_buttonLine">
+					<a href="javascript:;" class="mzc_button mzc_closeModal" name="cancelInModal"><span><span>我知道了</span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of gold function alert modal -->
+	<!-- feedback modal -->
+	    <div id="feedbackModal" class="mzc_modal">
+	        <div class="mzc_modalContent">
+
+	            <div class="mzc_topBox">
+	               	 欢迎提出您对美印的建议
+	            </div>
+
+	            <div class="mzc_middleBox">
+	                <div class="mzc_form">
+	                    <div class="mzc_formLine">
+	                        <label>您的联系方式</label>
+	                        <input name="fcontact" id="fcontact" type="text" class="mzc_text"/>
+	                        <div class="mzc_clear">&nbsp;</div>
+	                    </div>
+	                    <div class="mzc_formLine">
+	                        <label>您的建议</label>
+	                        <textarea name="fadvice" id="fadvice"></textarea>
+	                        <div class="mzc_clear">&nbsp;</div>
+	                    </div>
+	                    <div class="mzc_buttonLine">
+	                        <a href="javascript:;" class="mzc_link mzc_closeModal" name="feedbackCancel">取消</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	                        <a href="javascript:;" class="mzc_button submit" name="feedbackSubmit"><span><span>提交</span></span></a>
+	                    </div>
+	                </div>
+	                <div class="mzc_message">
+	                   	 您的建议已经成功提交，感谢您对美印的支持。
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- end of feedback modal -->
+	
+	<div class="mzc_modal" id="editTimeModal">
+		<div class="mzc_modalContent">
+			<div class="mzc_topBox">
+				修改活动
+			</div>
+			<div class="mzc_middleBox">
+				<div class="mzc_formLine">
+                    <label>活动名称：</label>
+                    <input type="text" class="mzc_text mzc_desc" value="" id="promo_name" name='promo_name'/>
+                    <div class="mzc_clear">&nbsp;</div>
+                </div>
+                <div class="mzc_formLine">
+                    <label>开始时间：</label>
+                    <span class="mzc_desc"></span>
+                    <div class="mzc_clear">&nbsp;</div>
+                </div>
+                <div class="mzc_formLine">
+                    <label>结束时间：</label>
+                    <input type="text" class="mzc_text mzc_date" value="" id="end_time" name='pr_end'/>
+                    <div class="mzc_clear">&nbsp;</div>
+                </div>
+                <div class="mzc_formLine" id="stitleWrapper">
+                    <label>价格标签：</label>
+                    <select name="pr_title" id="title">
+                        
+                    	<option value="1">限时打折</option>
+                        
+                    	<option value="2">团购价</option>
+                        
+                    	<option value="4">限时抢购</option>
+                        
+                    	<option value="5">亏本清仓</option>
+                        
+                    	<option value="6">美印</option>
+                        
+                    	<option value="7">新品上市</option>
+                        
+                    	<option value="-1">--自定义--</option>
+                        
+                    </select>
+                    <div id='custom_title_div'><input type='text' id='custom_title' name='custom_title' value=""><span class="mzc_hint">2到5个字符</span></div>
+
+                    <div class="mzc_clear">&nbsp;</div>
+                    <input type="hidden" id="prTtitle" value="" />
+                </div>
+                <div class="mzc_formLine mzc_withAppend">
+                    <label>标签描述：</label>
+                    <input type="text" class="mzc_text" id="desc" value="" name='pr_desc'/>
+					<span class="mzc_hint">2到30个字符</span>
+                    <div class="mzc_clear">&nbsp;</div>
+                </div>
+				<div class="mzc_buttonLine">
+					<a href="javascript:;" class="mzc_button mzc_closeModal" name="cancelInModal"><span><span>取消</span></span></a>
+					<a href="javascript:;" class="mzc_button mzc_editPromoTimeConfirmBtn" name="editPromoTimeConfirmBtn"><span><span>确认修改</span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var isShangmeng = false
+		var isSpread = false
+		var invite_count = false
+	</script>
+	
+	
+
+
+</div>
+
+<a href="/user/invite" id="inviteLink" target="_blank" name="inviteLink" style="display:none;"><span><span><span>免费提升水印商品上限</span></span></span></a>
+
+<a href="http://bangpai.taobao.com/group/thread/14629359-267635731.htm" title="开店技巧" target="_blank" id="helpLink" style="display:none;"><span><span><span>开店技巧</span></span></span></a>
+<!-- <a href="javascript:;" title="提建议" id="feedbackLink" style="display:none;"><span><span><span>提建议</span></span></span></a>-->
+
+<script type="text/javascript">
+	head.ready("jquery", function() {
+		if($.browser.msie && $.browser.version == 6) {
+			DD_belatedPNG.fix("a#inviteLink span span span, a#helpLink span span span, a#feedbackLink span span span");
+		}
+	});
+</script>
+
+
+
+    <script type="text/javascript">
+		head.ready("jquery", function() {
+			if($.browser.msie && $.browser.version == 6) {
+				DD_belatedPNG.fix(".mzc_goTop a");
+				DD_belatedPNG.fix(".mzc_goBottom a");
+			}
+		});
+	</script>
+
+    
+
+    <!--<script type="text/javascript" src=" http://toptrace.taobao.com/assets/getAppKey.js" topappkey="12367182"></script>-->
+    </body>
+</html>
