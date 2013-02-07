@@ -1,60 +1,38 @@
-﻿
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title> 美印 - 创建新水印 </title>
-	<link REL="SHORTCUT ICON" HREF="http://127.0.0.1/workspace/super_tag/i/favicon.ico"/>
+	<title>有利可图</title>
+	<link REL="SHORTCUT ICON" HREF="http://127.0.0.1/watermark/i/favicon.ico"/>
 	<!-- Meta Tags -->
 	<meta name="keywords" content="美印,水印,淘宝卖家,营销工具,商品主图,批量设置"/>
 	<meta name="description" content=""/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<!-- External CSS -->
-	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/screen.css?timestamp=1359515420" media="all" />
-	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/jPicker-1.1.6.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/watermark/css/screen.css?timestamp=1359515420" media="all" />
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/watermark/css/jPicker-1.1.6.css" media="all" />
 	<!--[if IE 6]>
-	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/ie6.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/watermark/css/ie6.css" media="all" />
 	<![endif]-->
 	<!--[if IE 7]>
-	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/workspace/super_tag/css/ie7.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="http://127.0.0.1/watermark/css/ie7.css" media="all" />
 	<![endif]-->
 	<!--[if IE 8]>
 	<meta http-equiv="x-ua-compatible" content="ie=7">
 	<![endif]-->
-	<link type="text/css" href="http://127.0.0.1/workspace/super_tag/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
 	<!--[if IE 6]>
-		<script type="text/javascript" src="http://127.0.0.1/workspace/super_tag/js/DD_belatedPNG_0.0.8a.js"></script>
+		<script type="text/javascript" src="http://127.0.0.1/watermark/js/DD_belatedPNG_0.0.8a.js"></script>
 	<![endif]-->
-	
-    <script type="text/javascript" src="http://127.0.0.1/workspace/super_tag/js/head.load.min.js"></script>
-    <script type="text/javascript">
+	<link type="text/css" href="http://127.0.0.1/watermark/css/redmond/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
 
-	    head.js({jquery: "http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-1.6.4.min.js"},
-	    		"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.jclass.js",
-	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.tmpl.min.js",
-	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/knockout-1.2.1.js",
-	         	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-textfill-0.1.js?timestamp=1359515420",
-	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.rotate-0.1.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery.mousewheel.min.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jpicker-1.1.6.js",
-	        	{cookie: "http://127.0.0.1/workspace/super_tag/js/jquery.cookie.js"},
-	        	"http://127.0.0.1/workspace/super_tag/js/json.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/jquery.zclip.min.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/jquery.jqtransform.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/jquery.zclip.min.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/ajaxfileupload.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/filigrane/jquery-ui-1.8.16.custom.min.js",
-	        	"http://127.0.0.1/workspace/super_tag/js/step3.js");
-
-    </script>
 </head>
 
 <body id="newActivityPage">
 <div class="mzc_pageWrapper">
-    
+    <div id="iComb"></div> 
 <!-- 到期提示 -->
 <div id="deadlineMask">
     <div class="msgWrapper">
-        <img src="http://127.0.0.1/workspace/super_tag/i/meiyin.png" class="logo"/>
+        <img src="http://127.0.0.1/watermark/i/meiyin.png" class="logo"/>
         <p>
             尊敬的用户您好：
             <br/>
@@ -118,52 +96,6 @@
     
 </div>
 
-<script type="text/javascript">
-
-	head.ready("jquery", function() {
-		
-		// about header
-		$(".mzc_header .topNav div.item").hover(
-			function() {
-				var item = $(this);
-				item.addClass("item-hover");
-				$(".subNav", item).show();
-			},
-			function() {
-				var item = $(this);
-				item.removeClass("item-hover");
-				$(".subNav", item).hide();
-			}
-		);
-		
-		head.ready("cookie", function() {
-		    var dgdl = $("#dinggou_deadline").val();
-		    dgdl = Date.parse(dgdl);
-		    var now = new Date();
-		    var diff = dgdl - 1360105201417;
-		    if(diff < 1000*60*60*24*7) {
-		        $("#deadlineMask .toDay").text( '' + Math.floor(diff/(1000*60*60*24)) + '天后'  );
-		        $("#deadline-reminder").html("<strong>您订购的美印即将到期，为保证您的正常使用，请<a href='/user/version'>点击这里续订</a></strong>");
-		        if(diff < 1000*60*60*24*1) {
-		            $("#deadlineMask .toDay").text( '今天' );
-		            $("#deadlineMask .close").remove();
-		        }
-		        if($("#versionPage").length < 1 && $("#welcomePage").length < 1 && $("#loginPage").length < 1 && $("#browserPage").length < 1 && $("#invitePage").length < 1 && $.cookie('deadlineMaskTime') !== 'yes') {
-		            $("#deadlineMask").show();
-		            $("#deadlineMask .close").click(function() {
-		                $("#deadlineMask").hide();
-		                $.cookie('deadlineMaskTime', 'yes', { path: '/', expires: 1 }); // 一天过期
-		            });
-		        }
-		    }
-		});
-	});
-</script>
-
-
-    
-
-<input type="hidden" id='change_act_id' value="">
 
 <div class="mzc_content">
     <div class="mzc_mainBox">
@@ -214,7 +146,7 @@
                                 <div class="mzc_preview">
                                     <input type="hidden" id="previewpid"/>
                                     <span class="imagewrapper">
-                                        <img id="previewimg" src="http://127.0.0.1/workspace/super_tag/i/loadingPage3.gif"  />
+                                        <img id="previewimg" src="http://127.0.0.1/watermark/i/loadingPage3.gif"  />
                                     </span>
                                 </div>
                                 <div class="previewButtons">
@@ -339,11 +271,10 @@
 
     <center>
 <span class=mzc_gray>© Copyright GoodTP.com 2011. All rights reserved. <a href='http://www.miibeian.gov.cn/' target=_blank class=mzc_gray>京ICP备11048253号</a></span>
-<!-- <a href="http://trust.360.cn/search.php" target="_blank" title="360可信网站"><img src="http://trust.360.cn/img.php?sn=9133&id=5" border="0" /></a>  -->
 </center>
 
 
-    <!---->
+
 </div>
 <input type="hidden" id='user_level' value="6" />
 <script>
@@ -424,37 +355,14 @@
 	        </div>
 	    </div>
 	    <!-- end of feedback modal -->
-	
-
 </div>
 
-<a href="/user/invite" id="inviteLink" target="_blank" name="inviteLink" style="display:none;"><span><span><span>免费提升水印商品上限</span></span></span></a>
-
-<a href="http://bangpai.taobao.com/group/thread/14629359-267635731.htm" title="开店技巧" target="_blank" id="helpLink" style="display:none;"><span><span><span>开店技巧</span></span></span></a>
-<!-- <a href="javascript:;" title="提建议" id="feedbackLink" style="display:none;"><span><span><span>提建议</span></span></span></a>-->
-
-<script type="text/javascript">
-	head.ready("jquery", function() {
-		if($.browser.msie && $.browser.version == 6) {
-			DD_belatedPNG.fix("a#inviteLink span span span, a#helpLink span span span, a#feedbackLink span span span");
-		}
-	});
-</script>
-
-
-
-    <script type="text/javascript">
-		head.ready("jquery", function() {
-			if($.browser.msie && $.browser.version == 6) {
-				DD_belatedPNG.fix(".mzc_goTop a");
-				DD_belatedPNG.fix(".mzc_goBottom a");
-			}
-		});
+	<script type="text/javascript" src="http://127.0.0.1/watermark/js/libs/seed/seed.js"></script>
+	<script type="text/javascript">
+		AsyncLoader.js("http://127.0.0.1/watermark/js/screen/merge.js");
 	</script>
-
-    
-
-    <!--<script type="text/javascript" src=" http://toptrace.taobao.com/assets/getAppKey.js" topappkey="12367182"></script>-->
-    </body>
+	
+	
+</body>
 </html>
 

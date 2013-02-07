@@ -21,6 +21,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=7">
 	<![endif]-->
 	<link type="text/css" href="http://127.0.0.1/watermark/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+
 	<!--[if IE 6]>
 		<script type="text/javascript" src="http://127.0.0.1/watermark/js/DD_belatedPNG_0.0.8a.js"></script>
 	<![endif]-->
@@ -43,14 +44,14 @@
 	        	"http://127.0.0.1/watermark/js/plugins/ajaxfileupload.js",
 	        	"http://127.0.0.1/watermark/js/plugins/jquery-ui-1.8.16.custom.min.js",
 				"http://127.0.0.1/watermark/js/swfobject.js",
-	        	"http://127.0.0.1/watermark/js/step3.js?timestamp=1359515420");
+	        	"http://127.0.0.1/watermark/js/step3.js");
 
     </script>
 </head>
 
 <body id="newActivityPage">
 <div class="mzc_pageWrapper">
-    
+    <div id="iComb"></div> 
 <!-- 到期提示 -->
 <div id="deadlineMask">
     <div class="msgWrapper">
@@ -140,7 +141,7 @@
 		    var dgdl = $("#dinggou_deadline").val();
 		    dgdl = Date.parse(dgdl);
 		    var now = new Date();
-		    var diff = dgdl - 1359905018665;
+		    var diff = dgdl - 1360105201417;
 		    if(diff < 1000*60*60*24*7) {
 		        $("#deadlineMask .toDay").text( '' + Math.floor(diff/(1000*60*60*24)) + '天后'  );
 		        $("#deadline-reminder").html("<strong>您订购的美印即将到期，为保证您的正常使用，请<a href='/user/version'>点击这里续订</a></strong>");
@@ -256,12 +257,12 @@
                                                 <li class="wmtype"><a href="javascript:;" rel="#wmtype_200">其他</a></li>
                                             
                                         </ul>
-                                       <div class="wmList" style="">
+                                        <div class="wmList">
                                             <div class="pagination">
-                                                <a href="javascript:;" class="prevPage disabled" style="">上一页</a>
-                                                <a href="javascript:;" rel="#page1" class="page currentPage">1</a><a href="javascript:;" rel="#page2" class="page">2</a><a href="javascript:;" rel="#page3" class="page">3</a><a href="javascript:;" class="nextPage" style="">下一页</a>
+                                                <a href="javascript:;" class="prevPage">上一页</a>
+                                                <a href="javascript:;" class="nextPage">下一页</a>
                                             </div>
-                                        <a href="javascript:;" class="watermark ui-draggable" id="wm_0"><div class="wmBasic imageBasic" style="left: 0px; top: 1.8479999999999999px; width: 84px; height: 80px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/01/04/f365fc05c62245a28566c7345569801f.png_300x300.png" style="width: 84px; height: 80px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_1"><div class="wmBasic imageBasic" style="left: 8.4px; top: 9.24px; width: 67px; height: 65px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2011/11/09/44f41a33e6eb44219a94905671a5e65c.png_300x300.png" style="width: 67px; height: 65px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_2"><div class="wmBasic imageBasic" style="left: 4.367999999999999px; top: 31.374px; width: 75px; height: 21px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2011/11/09/176bf8a013334576b71a32047e34b9f0.png_300x300.png" style="width: 75px; height: 21px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_3"><div class="wmBasic imageBasic" style="left: 0px; top: 0px; width: 84px; height: 84px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2011/11/09/2532920fea6945e7a21a91f050ad9a9b.png_300x300.png" style="width: 84px; height: 84px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_4"><div class="wmBasic imageBasic" style="left: 6.72px; top: 7.77px; width: 70px; height: 68px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2011/11/09/8df661f578154e8ca801d098f175418d.png_300x300.png" style="width: 70px; height: 68px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_5"><div class="wmBasic imageBasic" style="left: 0px; top: 0px; width: 84px; height: 84px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/03/12/c976dc5de3604c3cac95a65d69aeae5a.png_300x300.png" style="width: 84px; height: 84px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_6"><div class="wmBasic imageBasic" style="left: 0px; top: 13.734px; width: 84px; height: 56px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/02/29/d379120c85d24f889d31bd152ea32e7c.png_300x300.png" style="width: 84px; height: 56px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_7"><div class="wmBasic imageBasic" style="left: 0px; top: 0px; width: 84px; height: 84px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/02/29/41dd990075314eb891ef2f86fce1dc06.png_300x300.png" style="width: 84px; height: 84px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_8"><div class="wmBasic imageBasic" style="left: 0px; top: 17.514px; width: 84px; height: 48px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/02/29/0d3d011754c244c097cc22844bbdd1f6.png_300x300.png" style="width: 84px; height: 48px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_9"><div class="wmBasic imageBasic" style="left: 0px; top: 0px; width: 84px; height: 84px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/02/29/772eb5691d6544e2b335aba432b676b4.png_300x300.png" style="width: 84px; height: 84px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_10"><div class="wmBasic imageBasic" style="left: 0px; top: 17.64px; width: 84px; height: 48px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/02/29/196b386b3fdc4aa79609c359aa126d91.png_300x300.png" style="width: 84px; height: 48px;"><div class="selectedBorder"></div></div></a><a href="javascript:;" class="watermark ui-draggable" id="wm_11"><div class="wmBasic imageBasic" style="left: 0px; top: 7.728px; width: 84px; height: 68px; -webkit-transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"><img src="/static/upload/2012/02/17/b42ec42fddef483db8867ecf52b3ad76.png_300x300.png" style="width: 84px; height: 68px;"><div class="selectedBorder"></div></div></a></div>
+                                        </div>
                                         <div class="wmSpecialList" id="wmtype_0">
                                             <div class="upload">
                                                 <label>上传水印图片：</label>
@@ -424,8 +425,6 @@
 	        </div>
 	    </div>
 	    <!-- end of feedback modal -->
-	
-
 </div>
 
 <a href="/user/invite" id="inviteLink" target="_blank" name="inviteLink" style="display:none;"><span><span><span>免费提升水印商品上限</span></span></span></a>
@@ -453,7 +452,6 @@
 	</script>
 
     
-
-    <!--<script type="text/javascript" src=" http://toptrace.taobao.com/assets/getAppKey.js" topappkey="12367182"></script>-->
     </body>
 </html>
+
